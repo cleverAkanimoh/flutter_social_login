@@ -48,8 +48,26 @@ class _HomePageState extends State<HomePage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisSize: MainAxisSize,
-        children: [],
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Container(
+            height: 100,
+            width: 100,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(_user!.photoURL!),
+              ),
+            ),
+          ),
+          Text(_user!.email!),
+          Text(_user!.displayName ?? ""),
+          MaterialButton(
+            onPressed: _auth.signOut,
+            color: Colors.red,
+            child: const Text("Sign Out"),
+            textColor: Colors.white,
+          )
+        ],
       ),
     );
   }
