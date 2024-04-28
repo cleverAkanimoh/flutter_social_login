@@ -12,7 +12,12 @@
           "package_name": "com.example.flutter_social_login"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "150600351745-46agtjkj04nojhtocbn26v5v48op2p5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBXP5JFXUcA5hx74rf5A5Uk9Q9A_0J8Rq8"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150600351745-46agtjkj04nojhtocbn26v5v48op2p5o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "150600351745-l1ro6ue93i108tto8o6gkakrlu2s9l54.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterSocialLogin"
+              }
+            }
+          ]
         }
       }
     }
