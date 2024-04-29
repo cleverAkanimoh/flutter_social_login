@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
           Text("make payment with paystack"),
           MaterialButton(
             onPressed: () {},
-            color: Colors.red,
+            color: Colors.blue,
             child: const Text("Make payment"),
             textColor: Colors.white,
           ),
