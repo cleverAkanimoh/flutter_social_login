@@ -64,6 +64,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '150600351745',
     projectId: 'flutter-social-login-2e09c',
     storageBucket: 'flutter-social-login-2e09c.appspot.com',
+    androidClientId: '150600351745-27et5an5utofq74aeopc2s5699ojqips.apps.googleusercontent.com',
+    iosClientId: '150600351745-l1ro6ue93i108tto8o6gkakrlu2s9l54.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterSocialLogin',
   );
 

@@ -18,7 +18,9 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     _auth.authStateChanges().listen((event) {
-      _user = event;
+      setState(() {
+        _user = event;
+      });
     });
   }
 
@@ -26,7 +28,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Google Sign in Clever Akanimoh"),
+        title: const Text("Google Signin - Clever Akanimoh"),
       ),
       body: _user != null ? _userInfo() : _googleSignInButton(),
     );
@@ -37,7 +39,7 @@ class _HomePageState extends State<HomePage> {
       child: SizedBox(
         height: 50,
         child: SignInButton(Buttons.google,
-            text: "sign in with google", onPressed: _handleGoogleSignin),
+            text: "Sign in with Google", onPressed: _handleGoogleSignin),
       ),
     );
   }
@@ -61,6 +63,13 @@ class _HomePageState extends State<HomePage> {
           ),
           Text(_user!.email!),
           Text(_user!.displayName ?? ""),
+          Text("make payment with paystack"),
+          MaterialButton(
+            onPressed: () {},
+            color: Colors.red,
+            child: const Text("Make payment"),
+            textColor: Colors.white,
+          ),
           MaterialButton(
             onPressed: _auth.signOut,
             color: Colors.red,
